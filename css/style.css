@@ -1,0 +1,326 @@
+   
+         
+                   #audio1 {
+                    z-index: 117;
+                    width: 215px;
+                    height: 40px;
+                    margin: 20px 0 20px 20px;
+                }
+                #audio2 {
+                    z-index: 117;
+                    
+                    width: 215px;
+                    height: 40px;
+                    margin: 20px 0 20px 20px;
+                }
+                #audio1 .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+                #audio2 .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+                #audio1 .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+                #audio2 .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+                #rec407705214 .tn-elem[data-elem-id="1643818269294"] {
+                    z-index: 2;
+                    top: 35px;
+                    left: calc(9% + 600px - 212px + -110px);
+                    width: 212px;
+                    height: 84px;
+                }
+                #rec407705214 .tn-elem[data-elem-id="1643818269294"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+                
+                #rec407705214 .tn-elem[data-elem-id="1643701945790"] {
+                    z-index: 1;
+                    top: 35px;
+                    left: calc(50% + 600px - 52px + -40px);
+                    width: 52px;
+                    height: 52px;
+                }
+                #rec407705214 .tn-elem[data-elem-id="1643701945790"] .tn-atom {
+                    background-position: center center;
+                    border-color: transparent;
+                    border-style: solid;
+                }
+                .subtitle {
+                    width: 100%;
+                    height: 100%;
+                    padding: 21px 0 21px 24px;
+                    background-color: var(--white);
+                    border-radius: 20px;
+                    border: 1px dashed var(--blue);
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    opacity: 0;
+                    pointer-events: none;
+                    min-height: 85px;
+                }
+                .subtitle.transition {
+                    -webkit-transition: opacity 0.4s ease;
+                    transition: opacity 0.4s ease;
+                }
+                .subtitle.shown {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                .subtitle__text {
+                    color: var(--black);
+                    white-space: pre-line;
+                    font-family: Manrope, sans-serif;
+                    font-size: 14px;
+                    min-height: 30px;
+                }
+                .subtitle__controls {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    background-color: var(--blue);
+                    display: -ms-grid;
+                    display: grid;
+                    place-items: center;
+                    cursor: pointer;
+                }
+                .subtitle__controls .icon {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: relative;
+                }
+                .subtitle__controls.play .icon {
+                    width: 8px;
+                    height: 9px;
+                    left: 1px;
+                    background-image: var(--playIcon);
+                }
+                .subtitle__controls.pause .icon {
+                    width: 6px;
+                    height: 10px;
+                    background-image: var(--pauseIcon);
+                }
+                .subtitle__icon {
+                    width: 9px;
+                    height: 9px;
+                }
+                .subtitle__close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    -webkit-transform: translate(0, -30%);
+                    transform: translate(0, -30%);
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    border: 1px solid var(--blue);
+                    background-color: var(--white);
+                    display: -ms-grid;
+                    display: grid;
+                    place-items: center;
+                    cursor: pointer;
+                }
+                .subtitle {
+                            z-index: 999;
+                        }
+                        @charset "UTF-8";
+                        :root {
+                            --blue: rgba(129, 174, 217, 1);
+                            --black: rgba(51, 51, 51, 1);
+                            --gray: rgba(156, 156, 156, 0.47);
+                            --white: #f5f5f3;
+                            --error: #db261b;
+                            --playIcon: url("https://static.tildacdn.com/tild3439-3832-4664-b138-343865343434/arrow-white.svg");
+                            --pauseIcon: url("https://static.tildacdn.com/tild6637-3330-4331-b535-393532613737/pause.svg");
+                        }
+                        .tn-atom__html {
+                            height: 100%;
+                        }
+                        .audio {
+                            --current: var(--black);
+                            --currentBars: var(--black);
+                            --icon: var(--playIcon);
+                            --iconBg: var(--current);
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 91px;
+                            border: 1px solid var(--current);
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            padding: 0 22px;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            -webkit-box-shadow: 4px -4px 0 0 var(--current);
+                            box-shadow: 4px -4px 0 0 var(--current);
+                            background-color: var(--white);
+                            -webkit-transition: -webkit-transform 0.1s, -webkit-box-shadow 0.1s;
+                            transition: -webkit-transform 0.1s, -webkit-box-shadow 0.1s;
+                            transition: transform 0.1s, box-shadow 0.1s;
+                            transition: transform 0.1s, box-shadow 0.1s, -webkit-transform 0.1s, -webkit-box-shadow 0.1s;
+                        }
+                        .audio.paused,
+                        .audio.playing {
+                            --current: var(--blue);
+                            --currentBars: var(--gray);
+                        }
+                        .audio:hover {
+                            -webkit-transform: translate(2px, -2px);
+                            transform: translate(2px, -2px);
+                            -webkit-box-shadow: 2px -2px 0 0 var(--current);
+                            box-shadow: 2px -2px 0 0 var(--current);
+                        }
+                        .audio:active {
+                            -webkit-transform: translate(4px, -4px);
+                            transform: translate(4px, -4px);
+                            -webkit-box-shadow: 0 0 0 0 var(--current);
+                            box-shadow: 0 0 0 0 var(--current);
+                        }
+                        .audio .icon {
+                            height: 32px;
+                            aspect-ratio: 1/1;
+                            background-color: var(--iconBg);
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            display: -ms-grid;
+                            display: grid;
+                            place-items: center;
+                            cursor: pointer;
+                        }
+                        .audio .icon .icon-content {
+                            width: 11px;
+                            height: 12px;
+                            left: 2px;
+                            position: relative;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                        .audio .icon.play .icon-content {
+                            background-image: var(--icon);
+                        }
+                        .audio .icon.pause .icon-content {
+                            background-image: var(--pauseIcon);
+                            width: 8px;
+                            height: 12px;
+                            left: 0;
+                        }
+                        .audio .icon.error {
+                            cursor: not-allowed;
+                            position: relative;
+                        }
+                        .audio .icon.error::after {
+                            content: "Не удалось загрузить аудио :(";
+                            position: absolute;
+                            top: -100%;
+                            left: 0;
+                            width: -webkit-max-content;
+                            width: -moz-max-content;
+                            width: max-content;
+                            background-color: var(--error);
+                            border-radius: 9999px;
+                            -webkit-box-shadow: 3px -2px 0 0 var(--black);
+                            box-shadow: 3px -2px 0 0 var(--black);
+                            padding: 0.4em 1em;
+                            font-family: sans-serif;
+                            font-size: 16px;
+                            color: var(--white);
+                            pointer-events: none;
+                            opacity: 0;
+                            -webkit-transition: opacity 0.4s ease;
+                            transition: opacity 0.4s ease;
+                        }
+                        .audio .icon.error:hover::after {
+                            opacity: 1;
+                        }
+                        .audio .tracks {
+                            position: relative;
+                            height: 24px;
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                        .audio .tracks .track {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: start;
+                            -ms-flex-pack: start;
+                            justify-content: start;
+                            -webkit-box-align: end;
+                            -ms-flex-align: end;
+                            align-items: flex-end;
+                        }
+                        .audio .tracks .track span {
+                            display: block;
+                            height: 100%;
+                            width: 3px;
+                            margin-right: 3px;
+                            background: var(--currentBars);
+                            border-radius: 1.5px;
+                        }
+                        .audio .tracks .track.colored {
+                            -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+                            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+                        }
+                        .audio .tracks .track.colored span {
+                            background: var(--current);
+                        }
+                       
+                        .audio.small {
+                            padding: 5px 10px;
+                        }
+                        .audio.small .icon {
+                            height: 22px;
+                        }
+                        .audio.small .icon .icon-content {
+                            width: 6px;
+                            height: 7px;
+                            left: 1px;
+                        }
+                        .audio.small .tracks {
+                            height: 14px;
+                        }
+                        #rec407705214 [data-elem-type="html"] {
+                                position: fixed;
+                                z-index: 999999999 !important;
+                                overflow: visible;
+                                pointer-events: none;
+                            }
+                            .t396__elem {
+                
+                        box-sizing: border-box;
+                        display: table;
+                    }
+                    .heading
+                    {
+                        padding:10px 0 0 0;
+                    }
+                    #proimage img
+                    {
+                        width:50px;
+                    }     
